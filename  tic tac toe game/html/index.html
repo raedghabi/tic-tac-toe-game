@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe game</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalizer.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--  the main game  -->
+    <div class="container">
+        <!-- the game header -->
+        <ul class="header">
+            <li id="logo"><span class="x">X</span> <span class="o">O</span></li>
+            <li id="turn"></li>
+            <li id="restart" onclick="restart()"><i class="fas fa-sync-alt"></i></li>
+        </ul>
+        <!--  the game bord -->
+        <div class="game-bord">
+            <div class="squer" id="item1" onclick="game(this.id)"></div>
+            <div class="squer" id="item2"  onclick="game(this.id)"></div>
+            <div class="squer" id="item3"  onclick="game(this.id)"></div>
+            
+            <div class="squer" id="item4"  onclick="game(this.id)"></div>
+            <div class="squer" id="item5"  onclick="game(this.id)"></div>
+            <div class="squer" id="item6"  onclick="game(this.id)"></div>
+    
+            <div class="squer" id="item7"  onclick="game(this.id)"></div>
+            <div class="squer" id="item8"  onclick="game(this.id)"></div>
+            <div class="squer" id="item9"  onclick="game(this.id)"></div>
+        </div>
+        <!--  score  -->
+        <ul class="score">
+            <li id="X-score"><span>X =</span></li>
+            <li id="draw-score"><span>Draw =</span></li>
+            <li id="O-score"><span>O =</span></li>
+        </ul> 
+    </div>
+    <!--  winn pup up  -->
+    <div id="win-pupup">
+        <span id="winner">test</span>
+        <button onclick="continueTheGame()">Ok</button>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
